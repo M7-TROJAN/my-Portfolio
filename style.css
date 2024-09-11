@@ -205,11 +205,12 @@ span{
 }
 
 @keyframes words {
-    0%, 20% { content: "Developer"; }
-    21%, 40% { content: "Web Developer"; }
-    41%, 60% { content: ".Net Back-End Developer"; }
-    61%, 80% { content: "Full-Stack Developer"; }
-    81%, 100% { content: "Script Writer"; }
+    0%, 10% { content: ""; }
+    11%, 30% { content: "Developer"; }
+    31%, 50% { content: "Web Developer"; }
+    51%, 70% { content: ".Net Back-End Developer"; }
+    71%, 90% { content: "Full-Stack Developer"; }
+    91%, 100% { content: "Script Writer"; }
 }
 
 /* Services Section */
@@ -307,11 +308,69 @@ span{
     color: #f1f1f1;
 }
 
+/* Courses Section */
+.courses {
+    padding: 5rem 0;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.course-item {
+    background-color: #b74b4b;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-item h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.course-item p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.course-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.course-item a:hover {
+    color: #b74b4b;
+    border-bottom: 2px solid #b74b4b;
+}
+
 
 /* Education Section */
 .education {
     padding: 5rem 0;
-    background-color: #1a1a1a;
+    background-color: black;
     color: white;
     text-align: center;
 }
@@ -407,7 +466,7 @@ span{
 /* Experience Section */
 .experience {
     padding: 5rem 0;
-    background-color: black;
+    background-color: #1e1e1e;
     color: white;
     text-align: center;
 }
@@ -429,6 +488,7 @@ span{
     width: 50%;
     margin: 1rem;
     border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .experience-item h3 {
@@ -441,6 +501,11 @@ span{
     margin-bottom: 1rem;
 }
 
+.experience-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 /*
 TODO: remove this comment when you start working at a company insha'Allah 
 .experience-item span {
@@ -451,7 +516,7 @@ TODO: remove this comment when you start working at a company insha'Allah
 /* Contact Section */
 .contact {
     padding: 5rem 0;
-    background-color: #1a1a1a;
+    background-color: black;
     color: white;
     text-align: center;
 }
